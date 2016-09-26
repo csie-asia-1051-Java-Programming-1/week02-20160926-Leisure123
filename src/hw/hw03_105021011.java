@@ -5,11 +5,12 @@ package hw;
  * Date: 2016/09/26
  * Author: 105021011 丁紹剛
  */
-
+import java.util.Scanner;
 public class hw03_105021011 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
 
 	}
 

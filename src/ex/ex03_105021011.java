@@ -12,20 +12,25 @@ public class ex03_105021011 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		System.out.print("停了幾分鐘:");
-		float p = scn.nextInt();
+		System.out.print("從");
+		float a = scn.nextInt();
+		float b = scn.nextInt();
+		System.out.print("到");
+		float c = scn.nextInt();
+		float d = scn.nextInt();
+		float p = 60*(c-a)+(d-b);
 		float t = (float)Math.floor(p/30);
 		if(t <= 4){
-			float d = 30*t;
-			System.out.print("需要付:" + d );
+			float dollar = 30*t;
+			System.out.print("需要付:" + dollar );
 		}else{
 			if(t > 4 && t <= 8){
-				float d = 120+40*(t-4);
-				System.out.print("需要付" + d );
+				float dollar = 120+40*(t-4);
+				System.out.print("需要付" + dollar );
 			}else{
 				if(t > 8 ){
-					float d = 280+60*(t-8);
-					System.out.print("需要付" + d );
+					float dollar = 280+60*(t-8);
+					System.out.print("需要付" + dollar );
 				}
 			}
 			
