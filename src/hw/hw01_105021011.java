@@ -23,11 +23,12 @@ public class hw01_105021011 {
 		System.out.print("桃子買了:");
 		int a3 = scn.nextInt();
 		int x = a1*15 + a2*20 + a3*30;
-		int fifty1 = x / 50;
-		int fifty2 = x % 50;
+		int c = n-x;
+		int fifty1 = c / 50;
+		int fifty2 = c % 50;
 		int five1 = fifty2 / 5;
 		int five2 = fifty2 % 5;
-		if(x >= n){
+		if(x > n){
 			System.out.println("0");
 		}else{
 			System.out.print("50元找了:" + fifty1 + "\n 5元找了:" + five1 + "\n 1元找了:" + five2);
